@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Bolivianas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1000px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #f0c14b;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+
+        .icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        #home header {
+            background: url('https://www.example.com/imagen-de-fondo.jpg') center/cover;
+            padding: 100px 20px 50px;
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        #home header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #home header p {
+            font-size: 1.2em;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            color: #111;
+            background-color: #f0c14b;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffa500;
+        }
+
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .movie {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .movie:hover {
+            transform: scale(1.05);
+        }
+
+        .movie img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .movie h3 {
+            font-size: 1.1em;
+            padding: 15px 0;
+            color: #f0c14b;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#peliculas">Películas</a></li>
+            <li><a href="#promotions">Promociones</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="icon">
+            <img src="img\icono.webp" alt="Icono">
+        </div>
+    </nav>
+
+    <div class="container" id="home">
+        <header>
+            <h1>Películas Bolivianas</h1>
+            <p>Descubre las mejores películas bolivianas y promociones exclusivas. ¡No te pierdas los últimos estrenos del cine nacional!</p>
+            <a href="#peliculas" class="btn">Ver Películas</a>
+        </header>
+    </div>
+
+    <div class="container" id="peliculas">
+        <section class="movies">
+            <div class="movie">
+                <img src="img\Cementerio.jpeg" alt="Película 1">
+                <h3>Película 1</h3>
+            </div>
+            <div class="movie">
+                <img src="img\engaño.jpeg" alt="Película 2">
+                <h3>Película 2</h3>
+            </div>
+            <div class="movie">
+                <img src="img\La bicicleta de los huanca.jpeg" alt="Película 3">
+                <h3>Película 3</h3>
+            </div>
+            <div class="movie">
+                <img src="img\Mi socio.jpeg" alt="Película 4">
+                <h3>Película 4</h3>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
